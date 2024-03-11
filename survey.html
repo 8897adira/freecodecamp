@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>survey</title>
+    </head>
+
+  <body>
+    <h1 id="title"> Population Survey </h1>
+    <p id="description"> This is a survey for the population of India. Kindly feel this form correctly. </p>
+    <form id="survey-form">
+  <fieldset>
+    <label id="name-label"  for="name"> Please Enter your Name <input id="name" placeholder="for eg. aditi" required> </label> 
+    <br>
+    <label id="email-label"  for="email"> Please Enter your Email <input id="email" type="email" placeholder="for eg. aditi@gmail.com" required> </label>
+    <br>
+    <label id="number-label" for="number"> Please Enter the Number of family members <input id="number" type="number" placeholder="for eg.3" min="2" max="10" required> </label>  
+<br>
+<label id="gender"> Please Enter Your Gender 
+  <select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">MALE</option>
+    <option value="2">FEMALE</option>
+    <option value="2">OTHERS</option> 
+    </select>
+</label>
+<br>
+  
+  <label> Would you like to share your annual income ? </label> 
+  <br> 
+  <label id="income"  for="income"> Yes <input name="income" type="radio" value="yes" required> </label>
+  <label id="income"  for="income"> No <input name="income" type="radio" value="no"  required> </label>
+
+  <br>
+<label> all the above info is true <input type="checkbox" value="checked"> </label>
+<br>
+<label> terms and conditions applied <input type="checkbox" value="checked"> </label>
+<br>
+<label for="message">feedback:
+          <textarea id="message" name="message" rows="3" cols="30" placeholder="...."></textarea>
+        </label>
+
+<br>
+<input id="submit" type="submit" value="submit">
+
+     
+   
+      </form>
+
+    </body>
+  </html>
